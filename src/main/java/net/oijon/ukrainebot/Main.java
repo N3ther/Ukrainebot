@@ -6,6 +6,7 @@ import java.util.Properties;
 
 import javafx.stage.Stage;
 import javafx.application.Application;
+import javafx.scene.Scene;
 
 /**
  * Hello world!
@@ -55,17 +56,20 @@ public class Main extends Application
 			e.printStackTrace();
 		}
     	
-    	Boolean hasAllKeys = Main.hasAllKeys(properties);
+    	s.close();
+    	
+    	Boolean hasAllKeys = hasAllKeys(properties);
     	
     	Stage stage = new Stage();
     	stage.setTitle("UkraineBot Panel");
-		stage.show();
     	
     	if (hasAllKeys) {
     		
     	} else {
     		
     	}
+    	
+    	stage.show();
 		
 	}
 }
